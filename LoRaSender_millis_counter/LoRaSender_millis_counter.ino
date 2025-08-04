@@ -42,11 +42,10 @@
 char txpacket[BUFFER_SIZE];
 char rxpacket[BUFFER_SIZE];
 
-// --- VARIÁVEIS DE CONTROLE ---
-unsigned long previousMillis = 0;   // Armazena o tempo do último envio
-const long interval = 1000;         // Intervalo de envio (1000 ms = 1 segundo)
-unsigned int packetCounter = 0;     // Contador de pacotes enviados
-// -----------------------------
+unsigned long previousMillis = 0;
+const long interval = 1000;       (1000 ms = 1 segundo)
+unsigned int packetCounter = 0;
+
 
 bool lora_idle=true;
 
@@ -79,10 +78,8 @@ void loop()
     {
         previousMillis = currentMillis;
 
-        // Incrementa o contador de pacotes
         packetCounter++;
 
-        // Monta o pacote com o novo contador
         sprintf(txpacket,"Hello world #%u", packetCounter);
 
         Serial.printf("\r\nsending packet \"%s\" , length %d\r\n",txpacket, strlen(txpacket));
