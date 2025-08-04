@@ -1,2 +1,2 @@
 # code_linker
-Initial Linker codes
+Initial Linker codes.
