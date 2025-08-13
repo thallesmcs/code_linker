@@ -65,7 +65,7 @@ Projeto inicial para comunicação LoRa com Heltec WiFi LoRa 32 V3, envio perió
 ```powershell
 pip install pyserial
 
-# Edite a constante SERIAL_PORT no arquivo se necessário (ex.: 'COM4')
+# Edite a constante SERIAL_PORT no arquivo se necessário (ex.: 'COM4').
 python .\leitura_da_serial.py
 ```
 
